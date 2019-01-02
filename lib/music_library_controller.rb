@@ -20,26 +20,6 @@ class MusicLibraryController
 
     input = gets.strip
 
-    while input != "exit"
-      case input
-        when "list songs"
-          list_songs
-        when "list artists"
-          list_artists
-        when "list genres"
-          list_genres
-        when "play song"
-          play_song
-        when "list artist"
-          list_songs_by_artist
-        when "list genre"
-          list_songs_by_genre
-        when "play song"
-          play_song
-        else
-          input = "exit"
-      end
-    end
   end
 
   def list_songs
